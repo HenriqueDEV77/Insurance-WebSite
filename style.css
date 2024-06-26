@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+}
+
+header {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+
+.EntrarEmContato a {
+    padding: 10px 20px;
+    color: black;
+    font-weight: 500;
+}
+
+.EntrarEmContato .contato {
+    color: black;
+    border-radius: 5rem;
+    border: 1px solid black;
+}
+
+.EntrarEmContato .contato:hover {
+    background: rgba(169, 169, 169, 0.097);
+}
+
+.icone img {
+    width: 150px;
+}
+
+.navegação {
+    display: flex;
+}
+
+.navegação li {
+    position: relative;
+}
+
+.navegação a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.677);
+    font-weight: 500;
+}
+
+.navegação a::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navegação a:hover::after {
+    width: 100%;
+}
+
+#barrinha {
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+section.inicio {
+    margin-top: 100px; 
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+section.inicio .texto1 h1 {
+    font-size: 3.5rem;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.inicio {
+    width: 100%;
+    top: 2rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+.texto2 {
+    width: 100%;
+    top: -8rem;
+    min-height: 100vh;
+    position: relative;
+    text-align: right;
+    right: 13vh;
+}
+
+.texto3{
+    width: 100%;
+    top: -50rem;
+    min-height: 100vh;
+    position: relative;
+    text-align: right;
+    right: 25vh;
+    font-size: 1rem;
+    padding: 10px 10px;
+    color: black;
+    font-weight: 500;
+    border-radius: 5rem;
+}
+
+
