@@ -1,10 +1,19 @@
-const images = document.querySelectorAll('.selecionar .navio')
-let currentIndex = 0;
 
-function changeImage(direction) {
-    console.log("Changing image:", direction);
+let currentIndex = 0;
+const images = document.querySelectorAll('.navio');
+
+function changeImage(n) {
     images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + direction + images.length) % images.length;
+    currentIndex = (currentIndex + n + images.length) % images.length;
     images[currentIndex].classList.add('active');
-    console.log("Current index:", currentIndex);
 }
+
+document.querySelector('.bx-menu').addEventListener('click', function() {
+    const nav = document.querySelector('.navegação');
+    if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+    } else {
+        nav.style.display = 'flex';
+    }
+});
+

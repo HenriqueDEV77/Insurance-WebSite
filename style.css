@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,16 +11,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html, body{
     width: 100%;
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track{
     background: black;
 }
 
-header {
+header{
     position: fixed;
     background-color: #ffffff;
     width: 100%;
@@ -33,42 +33,44 @@ header {
     padding: 15px 100px;
 }
 
-.EntrarEmContato a {
+
+/* Inicio da parte "Inicio" */
+.EntrarEmContato a{
     padding: 10px 20px;
     color: black;
     font-weight: 500;
 }
 
-.EntrarEmContato .contato {
+.EntrarEmContato .contato{
     color: black;
     border-radius: 5rem;
     border: 1px solid black;
 }
 
-.EntrarEmContato .contato:hover {
+.EntrarEmContato .contato:hover{
     background: rgba(169, 169, 169, 0.097);
 }
 
-.icone img {
+.icone img{
     width: 150px;
 }
 
-.navegação {
+.navegação{
     display: flex;
 }
 
-.navegação li {
+.navegação li{
     position: relative;
 }
 
-.navegação a {
+.navegação a{
     font-size: 1rem;
     padding: 10px 20px;
     color: rgba(0, 0, 0, 0.677);
     font-weight: 500;
 }
 
-.navegação a::after {
+.navegação a::after{
     content: '';
     width: 0px;
     height: 3px;
@@ -79,44 +81,44 @@ header {
     transition: 0.5s;
 }
 
-.navegação a:hover::after {
+.navegação a:hover::after{
     width: 100%;
 }
 
-#barrinha {
+#barrinha{
     font-size: 50px;
     cursor: pointer;
     z-index: 1000;
     display: none;
 }
 
-section.inicio {
+section.inicio{
     margin-top: 100px;
     padding: 20px;
     width: 100%;
     overflow: hidden;
 }
 
-section.inicio .texto1 h1 {
+section.inicio .texto1 h1{
     font-size: 3.5rem;
     color: #333;
     letter-spacing: 2px;
 }
 
-.inicio {
+.inicio{
     width: 100%;
     top: 2rem;
     min-height: 100vh;
     position: relative;
 }
 
-.texto1 {
+.texto1{
     width: 100%;
     right: -12vh;
     position: relative;
 }
 
-.texto2 {
+.texto2{
     width: 100%;
     top: -8rem;
     position: relative;
@@ -133,7 +135,7 @@ section.inicio .texto1 h1 {
     font-size: 1rem;
 }
 
-.bgc {
+.bgc{
     padding: 13px;
     color: white;
     font-weight: 500;
@@ -142,11 +144,11 @@ section.inicio .texto1 h1 {
     display: inline-block;
 }
 
-.texto3 .bgc:hover {
+.texto3 .bgc:hover{
     background: rgb(169, 169, 169);
 }
 
-.selecionar {
+.selecionar{
     position: relative;
     width: 50%;
     margin: auto;
@@ -155,16 +157,16 @@ section.inicio .texto1 h1 {
     justify-content: center;
 }
 
-.selecionar img {
+.selecionar img{
     display: none;
     width: 100%;
 }
 
-.selecionar img.active {
+.selecionar img.active{
     display: block;
 }
 
-.selecionar button {
+.selecionar button{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -176,14 +178,17 @@ section.inicio .texto1 h1 {
     font-size: 18px;
 }
 
-.selecionar .prev {
+.selecionar .prev{
     left: 0;
 }
 
-.selecionar .next {
+.selecionar .next{
     right: 0;
 }
+/* Fim da parte "Inicio" */
 
+
+/* Inicio da parte "Conheça/Tranquilidade" */
 .p1{
     margin-top: 10vh;
     width: 100%;
@@ -195,12 +200,13 @@ section.inicio .texto1 h1 {
 }
 
 .tranquilidadetxt{
+    margin-top: 4vh;
     width: 100%;
     text-align: center;
     font-size: 2rem;
 }
 
-.tranquilidadeimage {
+.tranquilidadeimage{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,8 +214,294 @@ section.inicio .texto1 h1 {
     margin: auto;
 }
 
-.tranquilidadeimage img {
+.tranquilidadeimage img{
     width: 80%;
     height: 80%;
 }
+/* Fim da parte "Conheça/Tranquilidade" */
+
+
+/* Inicio da parte "Novidades" */
+.novidades{
+    padding: 2rem;
+    background: black;
+}
+
+
+.novidades h2{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.novidades p{
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.novidadetxt{
+    position: relative;
+    right: -12vh;
+    font-weight: lighter;
+}
+
+.novidades .novidadeP{
+    position: relative;
+    right: -12vh;
+    font-size: 20px;
+    color: darkgray;
+    margin-top: 20px;
+}
+
+.novidades-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.novidadeimage{
+    border: 1px solid darkgray;
+    padding: 1rem;
+    width: 250px;
+    margin: 1rem;
+    text-align: left;
+}
+
+.novidadeimage img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.novidadeimage h3{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.novidadeimage p{
+    font-size: 1rem;
+    color: darkgray;
+}
+
+.setas-buttons {
+    margin-top: 2rem;
+    right: -12vh;
+    text-align: center;
+}
+
+.setas-buttons button{
+    background-color: #ffffff;
+    color: #121212;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.setas-buttons button:hover{
+    background-color: #aaaaaa;
+}
+/* Fim da parte "Novidades" */
+
+
+/* Inicio da parte "Serviços" */
+.serviços{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.serviçoh2{
+    position: relative;
+    right: -12vh;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-top: 4%;
+}
+
+.linha{
+    border: none;
+    border-top: 1px solid darkgray;
+    margin: 2rem 0;
+}
+
+.serviçosImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.serviçosImage img{
+    width: 40%;
+    height: auto;
+}
+
+.servico-info{
+    padding: 1rem;
+    width: 60%;
+}
+
+.servico-info h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.servico-info p {
+    font-size: 1rem;
+    color: #666666;
+    margin: 0.5rem 0 1rem;
+}
+
+.conheça-btn{
+    border: 1px solid darkgrey;
+    border-radius: 5rem;
+    color:black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.conheça-btn:hover{
+    background-color: #616161;
+}
+/* Fim da parte "Serviços" */
+
+
+/* Inicio do rodapé */
+.rodape{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.rodape-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape-esquerda h2{
+    font-size: 2.5rem;
+    position: relative;
+    right: -5vh;
+    top: 4vh;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.rodape-esquerda p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    right: -5vh;
+    top: 1vh;
+    color: darkgray;
+}
+
+.rodape-esquerda .logo img{
+    width: 100px;
+    position: relative;
+    right: -1vh;
+    top: 1vh;
+
+}
+
+.rodape-direita p{
+    color: darkgray;
+    position: relative;
+    top: -11vh;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contato-btn{
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5rem;
+    transition: background-color 0.1s ease;
+    position: relative;
+    top: -5vh;
+}
+
+.contato-btn:hover{
+    background-color: darkgray;
+}
+
+.rodape-informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.rodape-informacoes h3{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: white;
+    position: relative;
+    right: -1vh;
+    top: -1vh;
+}
+
+.rodape-informacoes p, .rodape-informacoes ul{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: darkgray;
+    position: relative;
+    right: -1vh;
+    top: -1vh;
+    padding: 1%;
+}
+
+.rodape-informacoes ul li{
+    margin-bottom: 0.5rem;
+}
+
+.rodape-informacoes ul li a {
+    color: darkgray;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rodape-informacoes ul li a:hover{
+    color: white;
+}
+
+.rodape-final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid darkgray;
+    padding-top: 1rem;
+}
+
+.rodape-final p{
+    font-size: 0.875rem;
+}
+
+.rodape-final .logo img{
+    width: 100px;
+    position: relative;
+    right: 80vh;
+}
+/* Fim do rodapé */
+
+
+/* RESPONSIVIDADE DO SITE */
+
 
