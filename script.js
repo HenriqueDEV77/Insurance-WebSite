@@ -1,19 +1,15 @@
+let btnMenu = document.getElementById('abrir-menu')
+let Menu = document.getElementById('menu')
+let Overlay = document.getElementById('overlay-menu')
 
-let currentIndex = 0;
-const images = document.querySelectorAll('.navio');
+btnMenu.addEventListener('click', ()=>{
+    Menu.classList.add('open-menu')
+})
 
-function changeImage(n) {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + n + images.length) % images.length;
-    images[currentIndex].classList.add('active');
-}
+menu.addEventListener('click', ()=>{
+    Menu.classList.remove('open-menu')
+})
 
-document.querySelector('.bx-menu').addEventListener('click', function() {
-    const nav = document.querySelector('.navegação');
-    if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-    } else {
-        nav.style.display = 'flex';
-    }
-});
-
+Overlay.addEventListener('click', ()=>{
+    Menu.classList.remove('open-menu')
+})
